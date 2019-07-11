@@ -1,0 +1,29 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Mapa</title>
+         <style>
+            #map {
+                width: 100%;
+                height: 400px;
+                background-color: grey;
+            }
+        </style>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmhd2SbgqjFjRFRv0cT4cAhyT7MZ7NTlk&callback=initMap"
+  async defer>
+        </script>
+        <script type="text/javascript" src="javamapa.js"></script>
+    </head>
+    <body>
+        <center>
+            <h2>mapa</h2>
+            <form method="POST" action="" id="formulario">
+                Longitude :<input type="text" name="txtLongitude"/>
+                Latitude :<input type="text" name="txtLatitude"/>
+                <input type="submit" name="btnMarcar" value="Marcar no mapa">
+            </form>
+            <div id="map"></div>
+        </center>
+        
+    </body>
+</html>
